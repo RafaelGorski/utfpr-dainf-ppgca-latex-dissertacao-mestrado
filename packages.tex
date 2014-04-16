@@ -1,0 +1,41 @@
+% Pacotes usados neste modelo e suas respectivas configurações
+
+%=====================================================
+
+% formato dos arquivos-fonte (usar UTF8 no Linux e ISO no Windows)
+%\usepackage[latin1]{inputenc}	% se arquivos LaTeX estiverem em ISO-8859-1
+\usepackage[isolatin]{inputenc} % se arquivos LaTeX estiverem em ISO-8859-1
+%\usepackage[utf8]{inputenc}	% se arquivos LaTeX estiverem em Unicode
+
+%=====================================================
+
+% packages sugeridos para facilitar sua redação
+\usepackage[brazil]{babel}	% linguagem do texto é português
+\usepackage{graphicx}		% incluir figuras em PS e EPS
+\usepackage{alltt,moreverb}	% mais comandos no modo verbatim
+\usepackage[obeyspaces]{url}	% inclusao de URLs na bibliografia
+
+%=====================================================
+
+% pacote para formatação de código-fonte
+\usepackage{listings}
+
+\lstset{language=c}
+\lstset{inputencoding=isolatin,extendedchars=true}
+\lstset{basicstyle=\ttfamily\footnotesize,commentstyle=\textit,stringstyle=\ttfamily}
+\lstset{showspaces=false,showtabs=false,showstringspaces=false}
+\lstset{numbers=left,stepnumber=1,numberstyle=\tiny}
+\lstset{columns=flexible,mathescape=true}
+\lstset{frame=single}
+
+%=====================================================
+
+% pacote para formatação de algoritmos
+\usepackage{algorithm,algorithmic}
+
+\floatname{algorithm}{Algoritmo}
+\renewcommand{\algorithmiccomment}[1]{~~~// #1}
+%\algsetup{linenosize=\footnotesize,linenodelimiter=.}
+
+%=====================================================
+

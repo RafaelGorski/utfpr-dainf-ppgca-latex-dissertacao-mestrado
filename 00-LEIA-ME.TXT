@@ -1,0 +1,21 @@
+Modelo LaTeX de pdm/dissertação/tese do PPGCA/UTFPR
+Versão 0.9.2, março de 2014
+Autor: prof. Carlos A. Maziero
+
+Este modelo é composto pelos seguintes arquivos:
+
+- ppgca.cls    : classe com as principais características do modelo
+- main.tex     : documento principal, que inclui os demais
+- packages.tex : inclusão de packages úteis para a redação
+- resumo.tex   : resumo, abstract e palavras-chave
+- agradece.tex : agradecimentos e dedicatória
+- ficha.tex    : ficha catalográfica
+- referencias.bib: referências bibliográficas BibTeX
+- build        : shell script para as principais tarefas
+
+Os diretórios cap1, cap2 e anexo1 contêm respectivamente os conteúdos
+dos capítulos 1, 2 e anexo 1 (A).
+
+Para compilar, digite "pdflatex main"; bibtex main; pdflatex main"
+
+Críticas e sugestões: maziero@utfpr.edu.br

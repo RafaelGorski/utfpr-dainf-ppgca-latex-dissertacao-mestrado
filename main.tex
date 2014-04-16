@@ -1,0 +1,109 @@
+% Este documento destina-se a servir como modelo para a produção de documentos
+% de pesquisa do PPGCA/UTFPR, como projetos, dissertações e teses. A classe de
+% documento se chama "ppgca" (arquivo ppgca.cls) e define o formato básico do
+% documento. O texto está organizado em capítulos que são organizados em
+% subdiretórios separados. São definidos exemplos para a inclusão de figuras,
+% códigos-fonte e a definição de tabelas.
+%
+% Produzido por Carlos Maziero (maziero@utfpr.edu.br) em março de 2014.
+% "Inspirado" de um modelo anterior construído para o PPGIA/PUCPR.
+
+% Tipo do documento:
+% - pdm: projeto de dissertação de mestrado
+% - msc: dissertação de mestrado
+% - qualif: qualificação de doutorado
+% - phd: tese de doutorado
+%
+% Versão do documento:
+% - defesa:   só frente, espaçamento 1,5, menos páginas iniciais
+% - aprovada: frente/verso, espaçamento 1, mais páginas iniciais
+%
+% Descomentar a opção apropriada (apenas uma)
+%\documentclass[pdm,defesa]{ppgca}	% PDM, versão para a defesa
+%\documentclass[pdm,aprovada]{ppgca}	% PDM, versão final
+\documentclass[msc,defesa]{ppgca}	% MSc, versão para a defesa
+%\documentclass[msc,aprovada]{ppgca}	% MSc, versão final
+%\documentclass[qualif,defesa]{ppgca}	% Qualify, versão para a defesa
+%\documentclass[qualif,aprovada]{ppgca}	% Qualify, versão final
+%\documentclass[phd,defesa]{ppgca}	% PhD, versão para a defesa
+%\documentclass[phd,aprovada]{ppgca}	% PhD, versão final
+
+% inclusão de pacotes e suas respectivas configurações
+\include{packages}
+
+%=====================================================
+
+\begin {document}
+
+% início das páginas iniciais do documento
+\frontmatter
+
+% principais dados, usados para gerar as páginas iniciais
+\title{Um modelo para dissertações e teses (escrevi um título mais longo
+para ver como se comporta a quebra de linhas e o espaçamento entre elas)}
+
+% definição das 3 palavras-chave e 3 keywords
+\keywords{pc1}{pc2}{pc3}{kw1}{kw2}{kw3}
+
+\author{Carlos Alberto Maziero}
+
+% orientador e co-orientador (comente o co-, se não houver)
+\advisor{Donald Knuth}
+\coadvisor{Leslie Lamport}
+
+% área de concentração (NÃO MUDE: todas as dissertações e teses do PPGCA
+% são nesta área, apenas as linhas de pesquisa é que variam)
+\field{Ciência da Computação}
+
+% data e local
+\date{Março de 2014}
+\local{Curitiba PR}
+
+% produza as páginas iniciais
+\maketitle
+
+%=====================================================
+
+% resumo e abstract
+\include{resumo}
+
+% índice geral
+\tableofcontents
+
+% lista de figuras
+\listoffigures
+\addcontentsline{toc}{chapter}{Lista de Figuras}
+
+% lista de tabelas
+\listoftables
+\addcontentsline{toc}{chapter}{Lista de Tabelas}
+
+% lista de símbolos (ainda com preenchimento manual)
+\include{listasimb}
+
+% lista de abreviações (ainda com preenchimento manual)
+\include{listaabrev}
+
+%=====================================================
+
+% início da parte principal (não remova)
+\mainmatter
+
+% inclusao de cada capítulo
+\include{cap1/main}
+\include{cap2/main}
+
+% o estilo da bibliografia está definido em ppgca.cls
+\bibliography{referencias}
+
+%=====================================================
+
+% início dos apêndices
+\appendix
+
+% inclusão de cada apêndice
+\include{anexo1/main}
+
+\end{document}
+
+%=====================================================
