@@ -1,4 +1,8 @@
-utfpr-dainf-ppgca-latex-dissertacao-mestrado
-============================================
+Template para Dissertação Mestrado PPGCA UTFPR 2014
+====
+Atualizado em 15 Abr 2014
 
-utfpr-dainf-ppgca-latex-dissertacao-mestrado
+
+Origem: 
+====
+http://ppgca.dainf.ct.utfpr.edu.br/doku.php?id=documentos
